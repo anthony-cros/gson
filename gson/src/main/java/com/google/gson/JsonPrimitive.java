@@ -238,6 +238,16 @@ public final class JsonPrimitive extends JsonElement {
     return getAsString().charAt(0);
   }
 
+ /**
+  * get this element's raw value as Object.
+  *
+  * @return get this element as an Object.
+  */
+  @Override
+  public Object getAsObject() {
+    return value;
+  }
+
   @Override
   public int hashCode() {
     if (value == null) {
